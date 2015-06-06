@@ -738,7 +738,7 @@ def readMAX(refresh):
 						# Fix offset which gets applied at around 30°C
 						if valve_temp > 128:
                                 			valve_temp = valve_temp - 128
-                                			valve_curtemp = (valve_curtemp + 128) * 2
+                                			valve_curtemp = valve_curtemp + 256
                             			valve_temp = float(valve_temp) / 2
                             			valve_curtemp = float(valve_curtemp) / 10
 				# HeatingThermostat (dev_type 1 or 2)
